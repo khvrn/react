@@ -3,10 +3,14 @@
   text-align: center;
 }
 
+.smiley {
+  font-size: calc(5px + 20vw);
+}
+
 .kharon h1 {
 letter-spacing: 10px;
   color: #86C232;
-	font-size: calc(1em + 20vw) ;
+	font-size: calc(1em + 20vw);
 	font-weight: 900;
 
 text-shadow:
@@ -34,24 +38,21 @@ text-shadow:
 21px 21px 20px rgba(0,0,0,1),
 21px 21px 1px rgba(0,0,0,0.5),
 0px 0px 20px rgba(0,0,0,.2);
-
+transform: scale(0.8);
+transition-duration: 0.5s;
 }
 
-/* .kharon h1 {
-	opacity: 1;
-	animation-name: fadeInOpacity;
-	animation-iteration-count: 1;
-	animation-timing-function: ease-in;
-	animation-duration: 1s;
-} */
+h1:hover {
+  transition-delay: 0.1s;
+  transition-duration: 0.7s;
+  -webkit-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  transform: scale(0.9);
+}
 
-@keyframes fadeInOpacity {
-	0% {
-		opacity: 0;
-	}
-	100% {
-		opacity: 1;
-	}
+@keyframes updateEmoji {
+  0% { transform: rotate(0deg);}
+  100% { transform: rotate(360deg);}
 }
 
 .grid {
