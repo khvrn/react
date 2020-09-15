@@ -5,57 +5,51 @@
 
 .smiley {
   font-size: calc(5px + 20vw);
+  animation: rotateSmiley 0.8s linear 0.1s 1 normal forwards;
 }
 
-.kharon h1 {
-letter-spacing: 10px;
-  color: #86C232;
-	font-size: calc(1em + 20vw);
-	font-weight: 900;
-
-text-shadow:
-0px 0px 0 rgb(125, 185, 41),
-1px 1px 0 rgb(116, 176, 32),
-2px 2px 0 rgb(107, 167, 23),
-3px 3px 0 rgb(98, 158, 14),
-4px 4px 0 rgb(89, 149, 5),
-5px 5px 0 rgb(80, 140, -4),
-6px 6px 0 rgb(71, 131, -13),
-7px 7px 0 rgb(62, 122, -22),
-8px 8px 0 rgb(53, 113, -31),
-9px 9px 0 rgb(44, 104, -40),
-10px 10px 0 rgb(35, 95, -49),
-11px 11px 0 rgb(26, 86, -58),
-12px 12px 0 rgb(17, 77, -67),
-13px 13px 0 rgb(8, 68, -76),
-14px 14px 0 rgb(-1, 59, -85),
-15px 15px 0 rgb(-9, 51, -93),
-16px 16px 0 rgb(-18, 42, -102),
-17px 17px 0 rgb(-27, 33, -111),
-18px 18px 0 rgb(-35, 25, -119),
-19px 19px 0 rgb(-44, 16, -128),
-20px 20px 0 rgb(-53, 7, -137),
-21px 21px 20px rgba(0,0,0,1),
-21px 21px 1px rgba(0,0,0,0.5),
-0px 0px 20px rgba(0,0,0,.2);
-transform: scale(0.8);
-transition-duration: 0.5s;
+h1 {
+  letter-spacing: 10px;
+    color: #86C232;
+  	font-size: calc(1em + 20vw);
+  	font-weight: 900;
+    transform: scale(0.9);
+    animation: make3D 0.8s linear 0.5s 1 normal forwards;
 }
 
-h1:hover {
-  transition-delay: 0.1s;
-  transition-duration: 0.7s;
-  -webkit-transform: scale(0.9);
-  -ms-transform: scale(0.9);
-  transform: scale(0.9);
+@keyframes make3D {
+  0% {}
+  100% { text-shadow:
+  0px 0px 0 rgb(125, 185, 41),
+  1px 1px 0 rgb(116, 176, 32),
+  2px 2px 0 rgb(107, 167, 23),
+  3px 3px 0 rgb(98, 158, 14),
+  4px 4px 0 rgb(89, 149, 5),
+  5px 5px 0 rgb(80, 140, -4),
+  6px 6px 0 rgb(71, 131, -13),
+  7px 7px 0 rgb(62, 122, -22),
+  8px 8px 0 rgb(53, 113, -31),
+  9px 9px 0 rgb(44, 104, -40),
+  10px 10px 0 rgb(35, 95, -49),
+  11px 11px 0 rgb(26, 86, -58),
+  12px 12px 0 rgb(17, 77, -67),
+  13px 13px 0 rgb(8, 68, -76),
+  14px 14px 0 rgb(-1, 59, -85),
+  15px 15px 0 rgb(-9, 51, -93),
+  16px 16px 0 rgb(-18, 42, -102),
+  17px 17px 0 rgb(-27, 33, -111),
+  18px 18px 0 rgb(-35, 25, -119),
+  19px 19px 0 rgb(-44, 16, -128),
+  20px 20px 0 rgb(-53, 7, -137),
+  21px 21px 20px rgba(0,0,0,1),
+  21px 21px 1px rgba(0,0,0,0.5),
+  0px 0px 20px rgba(0,0,0,.2);
+  transform: scale(0.8);
+  bottom: 50px;
+  }
 }
 
-@keyframes updateEmoji {
-  0% { transform: rotate(0deg);}
-  100% { transform: rotate(360deg);}
-}
-
-.grid {
+/* .grid {
   display: grid;
   grid-template-columns: auto 200px 200px 200px auto;
   width: 100%;
@@ -66,7 +60,7 @@ h1:hover {
 
 svg {
   fill: #86C232;
-}
+} */
 
 
 body{
